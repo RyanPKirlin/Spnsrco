@@ -1,5 +1,13 @@
 <h1>Hey there!</h1>
 
 <p>
-	<%= @math %>
+	<%= @math %>	
 </p>
+
+<p>Our last user is: 	<%= @last_user_name %> and the email is <%=@last_user_email %>. </p>
+
+<%= form_for @new_user, :url => { :action => "create" } do |f| %>
+  <%= f.text_field :name %>
+  <%= f.text_field :email %>
+  <%= f.submit "Create New Account", class: "btn btn-success" %>
+<% end %>

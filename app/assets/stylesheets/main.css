@@ -1,3 +1,7 @@
 .bootstrap-margin{
 	margin-top: 65px;
 }
+
+#user_name, #user_email {
+	margin: 0;
+}

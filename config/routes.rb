@@ -5,4 +5,7 @@ root :to => "static_pages#welcome"
 
 #get "/" => "static_pages#welcome"
 #this is what you'll do for other roots beyond the root
+
+post "create" => "static_pages#create"
+
 end
