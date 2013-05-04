@@ -28,3 +28,15 @@ class User < ActiveRecord::Base
   	end
   end
 end
+
+#In the console, you need to add in password and password hash to the User. So in the console, you type in rails g migration AddPasswordHashtoUser password_hash:string
+# That adds password hash.  Then you run rake db:migrate
+# rails g migration AddPasswordSaltToUser password_salt:string
+# then do rake db:migrate
+#you need to add these into the user.  So in the console, if you type in User, before you did this you will see only name and email in there>
+# after you do this you'll have: 1.9.3p392 :001 > User
+  #     => User(id: integer, name: string, email: string, created_at: datetime, updated_at: datetime, password_salt: string, password_hash: string)
+
+
+
+
