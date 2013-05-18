@@ -1,3 +1,209 @@
-// Place all the styles related to the users controller here.
-// They will automatically be included in application.css.
-// You can use Sass (SCSS) here: http://sass-lang.com/
+
+
+body {
+    background: white;
+}
+
+.header {
+    float: left;
+    padding: 10px 10px;
+}
+
+
+.container {
+    margin: 0 auto;
+    width: 940px;
+}
+
+h1 {
+     position: relative;
+     top: 65px;
+     left: -12px;
+     width: 205px;
+     height: 43px;
+     background: url('images/spnsr_logo.png');
+     text-indent: 100%;
+     white-space: nowrap;
+     overflow: hidden;
+     margin: 0 auto;
+ }
+
+.navigation {
+position: fixed;
+margin-bottom: 10%;
+top: 0;
+width: 100%;
+font-size: 16px;
+color: #ffffff;
+height: 40px;
+text-align: center;
+ font-family: "Arial Rounded MT Bold", Arial, Helvetica, sans-serif, Black;
+padding-top: 15px;
+/* Adds shadow to the bottom of the bar */
+-webkit-box-shadow: 0 0 8px 0 #000000;
+-moz-box-shadow: 0 0 8px 0 #000000;
+box-shadow: 0 0 8px 0 #000000;
+/* Adds the transparent background */
+background-color: rgba(1, 1, 1, 0.8);
+color: rgba(1, 1, 1, 0.8);
+}
+
+.navigation a {
+font-size: 14px;
+padding-left: 15px;
+padding-right: 15px;
+color: white;
+text-decoration: none;
+}
+
+.navigation a:hover {
+color: #FF6961;
+}
+
+h2 {
+    float: left;
+    position: relative;
+    top: 20px;
+    height: 50%;
+    margin-bottom: -200px;
+}
+
+h3 {
+    position: relative;
+    text-align: center;
+    top: 1%;
+    height: 50%;
+    margin: auto;
+}
+
+#floater {
+margin: auto;
+height: 5%;
+width: 5%;
+position: absolute;
+}
+
+#introtext{
+position: relative;
+padding-top: 7%;
+padding-bottom: 0%;
+font-family: "Arial Rounded MT Bold", Arial, Helvetica, sans-serif, Black;
+font-size: 1.2em;
+text-align: center;
+}
+
+#registration {
+    position: relative;
+    padding-top: 10%;
+    margin: auto;
+    padding-top: 2%;
+    padding-bottom: 2%;
+    clear: left;
+    color: #61f6ff;
+    font-family: "Arial Rounded MT Bold", Arial, Helvetica, sans-serif, Black;
+    background: #2d2d2d;
+    background: -webkit-gradient(
+        linear,
+        left bottom,
+        left top,
+        color-stop(0, rgb(60,60,60)),
+        color-stop(0.74, rgb(43,43,43)),
+        color-stop(1, rgb(60,60,60))
+        );
+     background: -moz-linear-gradient(
+        center bottom,
+        rgb(60,60,60) 0%,
+        rgb(43,43,43) 74%,
+        rgb(60,60,60) 100%
+        );
+     -moz-border-radius: 10px;
+     -webkit-border-radius: 10px;
+     border-radius: 10px;
+     width: 60%;
+     }
+
+ #registration a {
+      color: #8c910b;
+      text-shadow: 0px -1px 0px #000;
+      }
+
+#registration fieldset {
+      padding: 2%;
+      }
+
+#registration input {
+     -webkit-border-radius: 15px;
+     -moz-border-radius: 15px;
+     border-radius: 15px;
+     border:solid 1px #444;
+     font-size: 14px;
+     width: 90%;
+     padding: 7px 8px 7px 8px;
+     background: #ddd;
+     background: -moz-linear-gradient(
+          center bottom,
+          rgb(225,225,225) 0%,
+          rgb(215,215,215) 54%,
+          rgb(173,173,173) 100%
+     );
+     background: -webkit-gradient(
+          linear,
+          left bottom,
+          left top,
+          color-stop(0, rgb(225,225,225)),
+          color-stop(0.54, rgb(215,215,215)),
+          color-stop(1, rgb(173,173,173))
+      );
+      color:#333;
+      text-shadow:0px 1px 0px #FFF;
+      -moz-box-shadow: 0px 1px 0px #777;
+      -webkit-box-shadow: 0px 1px 0px #777;
+      box-shadow: 0px 1px 0px #777;
+}
+
+#RegisterUserForm{
+    margin: auto;
+}
+
+#logo{
+    float: left;
+    margin: auto;
+    padding-top: 0%;
+    padding-bottom: 0%;
+    width: 150px;
+}
+
+#logo2{
+    float: right;
+    margin: auto;
+    padding-top: 0%;
+    padding-bottom: 0%;
+    width: 150px;
+}
+
+#submit{
+    display: block;
+    width: 200px;
+    height: 50px;
+    margin: 10px auto;
+    font-family: "Arial Rounded MT Bold", Arial, Helvetica, sans-serif, Black;
+    font-size: 1.5em;
+    font-weight: bold;
+    background: #61f6ff;
+    text-shadow: 0 1px 1px rgba(255, 255, 255, 0.85);
+    -webkit-border-radius: 15px;
+    -moz-border-radius: 15px;
+    border-radius: 15px;
+    -webkit-box-shadow: 0 1px 2px rgba(0, 0, 0, 0.5);
+    -moz-box-shadow: 0 1px 2px rgba(0, 0, 0, 0.5);
+    box-shadow: 0 1px 2px rgba(0, 0, 0, 0.5);
+    -webkit-transition: all 0.5s ease-in-out;
+    -moz-transition:  all 0.5s ease-in-out;
+    -o-transition:  all 0.5s ease-in-out;
+}
+
+
+#footer {
+    padding: 3%;
+    text-align: center;
+}

@@ -1,18 +1,38 @@
-<h1>Users#new</h1>
-<h1>Sign Ups</h1>
+<!DOCTYPE html>
+<html lang="en">
+	<head>
+		<title>Spnsr.co</title>
+		<meta name="viewport" content="width=device-width, initial-scale=1.0">
+		<!--Bootstrap -->
+		<link href="css/bootstrap.min.css" rel="stylesheet" media="screen">
+	</head>
+	<body>
+        <div class="span9">
+          <%= bootstrap_flash %>
+          <%= yield %>
 
-<%= form_for @user do |f| %>
-	<p>
-		<%= f.label :email %><br />
-		<%= f.text_field :email %>
-	</p>
-	<p>
-		<%= f.label :password %><br />
-		<%= f.password_field :password %>
-	</p>
-	<p>
-		<%= f.label :password_confirmation %><br />
-		<%= f.password_field :password_confirmation %>
-	</p>
-	<p><%= f.submit %></p>
-<% end %>
+		<%= form_for @user do |f| %>
+			<p>
+				<%= f.label :email %><br />
+				<%= f.text_field :email %>
+			</p>
+			<p>
+				<%= f.label :password %><br />
+				<%= f.password_field :password %>
+			</p>
+			<p>
+				<%= f.label :password_confirmation %><br />
+				<%= f.password_field :password_confirmation %>
+			</p>
+			<p> 
+				<%=check_box_tag(:pet_dog) %>
+				<%= label_tag(:pet_dog, "I own a dog") %> </p>
+			<p>	<%= f.submit %></p>
+			<%= yield %>
+		<% end %>
+		</div>
+	</body>
+
+</html>
+
+

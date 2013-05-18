@@ -12,4 +12,14 @@
 //
 //= require jquery
 //= require jquery_ujs
+//= require twitter/bootstrap
 //= require_tree .
+
+$('.greeting').on('click', function() { 
+	if($('.greeting').html() == "Hey there!") {
+		$('.greeting').html("Hey dude!"); 
+	} else {
+		$('.greeting').html("Hey there!");
+	}
+
+	 });
